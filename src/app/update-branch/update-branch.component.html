@@ -1,0 +1,45 @@
+<div class="container">
+    <h3>Update Branch Here</h3>
+    
+    <form #addData="ngForm" (ngSubmit)="updateBranch(addData)">
+        <div class="form-group">
+          <input type="text" 
+          class="form-control"
+          ngModel 
+          id="branchName"
+          name="branchName"
+          #branchName="ngModel" 
+          placeholder="Enter the Branch Name">
+        </div>
+        <div class="form-group">
+            <input type="text" 
+            class="form-control"
+            ngModel 
+            id="branchAddress"
+            name="branchAddress"
+            #branchAddress="ngModel" 
+            placeholder="Enter the branchAddress">
+        </div>
+        <div class="form-group">
+            <input type="text" 
+            class="form-control"
+            ngModel 
+            id="branchPhone"
+            name="branchPhone"
+            #branchPhone="ngModel" 
+            placeholder="Enter the branchPhone About">
+          </div>
+          <div class="form-group">
+            <input type="text" 
+            class="form-control"
+            ngModel 
+            id="branchEmail"
+            name="branchEmail"
+            #branchEmail="ngModel" 
+            placeholder="Enter the branchEmail Availability">
+          </div>
+          
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
+    </div>

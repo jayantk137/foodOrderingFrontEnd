@@ -1,0 +1,60 @@
+<div class="container wrapper">
+
+  <div class="logo">
+      <img src="https://previews.123rf.com/images/olgastrelnikova/olgastrelnikova1901/olgastrelnikova190100001/115903194-food-icon-with-smile-label-for-food-company-grocery-store-icon-vector-illustration-with-smiling-mout.jpg" >
+    </div>
+  <div class="text-center mt-4 name">
+    FooDApp
+  </div>
+  <h3 class="text-center mt-4 name">Add Food Product</h3>
+  
+  <form #addData="ngForm" (ngSubmit)="addFoodProduct(addData)" class="pt-3 mt-3">
+      <div class="form-field d-flex align-items-center">
+        <input type="text" 
+        ngModel 
+        id="name"
+        name="name"
+        #name="ngModel" 
+        placeholder="Name">
+      </div>
+      <div class="form-field d-flex align-items-center">
+          <input type="text" 
+          ngModel 
+          id="type"
+          name="type"
+          #type="ngModel" 
+          placeholder="Type">
+      </div>
+      <div class="form-field d-flex align-items-center">
+        <input type="text" 
+        ngModel 
+        id="about"
+        name="about"
+        #about="ngModel" 
+        placeholder="About">
+    </div>
+    <div class="form-field d-flex align-items-center">
+      <input type="text" 
+      ngModel 
+      id="availability"
+      name="availability"
+      #availability="ngModel" 
+      placeholder="Availability">
+    </div>
+    <div class="form-field d-flex align-items-center">
+      <input type="text" 
+      ngModel 
+      id="price"
+      name="price"
+      #price="ngModel" 
+      placeholder="Price">
+  </div>
+
+
+      
+        
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  
+
+</div>

@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="logo">
+    <img src="https://previews.123rf.com/images/olgastrelnikova/olgastrelnikova1901/olgastrelnikova190100001/115903194-food-icon-with-smile-label-for-food-company-grocery-store-icon-vector-illustration-with-smiling-mout.jpg" >
+  </div>
+  <div class="text-center mt-4 name">
+    FooDApp
+  </div>
+  <form #addData="ngForm" (ngSubmit)="login(addData)" class="p-3 mt-3">
+    <!-- Email input -->
+    <span class="far fa-user"></span>
+    <div class="form-field d-flex align-items-center">
+      <input type="email"   
+      placeholder="Username"
+      ngModel 
+      id="username"
+      name="username"
+      #username="ngModel"
+      />
+    </div>
+  
+    <!-- Password input -->
+    <div class="form-field d-flex align-items-center">
+      <span class="fas fa-key"></span>
+      <input type="password"  
+      placeholder="Password"
+      ngModel
+      id="password"
+      name="password"
+      #password="ngModel"
+      />
+    </div>
+
+    <button type="submit" class="btn mt-3">Sign in</button>
+  </form>
+</div>

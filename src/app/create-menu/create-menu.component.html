@@ -1,0 +1,27 @@
+<div class="container wrapper">
+
+    <div class="logo">
+        <img src="https://previews.123rf.com/images/olgastrelnikova/olgastrelnikova1901/olgastrelnikova190100001/115903194-food-icon-with-smile-label-for-food-company-grocery-store-icon-vector-illustration-with-smiling-mout.jpg" >
+      </div>
+    <div class="text-center mt-4 name">
+      FooDApp
+    </div>
+    <h3 class="text-center mt-4 name">Menu</h3>
+    
+    <form #addData="ngForm" (ngSubmit)="addMenu(addData)" class="pt-3 mt-3">
+        <div class="form-field d-flex align-items-center">
+          <input type="text" 
+          ngModel 
+          id="customerName"
+          name="customerName"
+          #customerName="ngModel" 
+          placeholder="Enter the Menu Name">
+        </div>
+        
+        
+          
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
+
+</div>
